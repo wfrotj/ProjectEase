@@ -31,6 +31,9 @@ async function login(req, res) {
     username: teacher.username,
     firstName: teacher.firstName,
     lastName: teacher.lastName,
+    age: teacher.age,
+    employeeNumber: teacher.employeeNumber,
+    depEdEmail: teacher.depEdEmail,
   });
 }
 
