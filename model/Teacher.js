@@ -9,6 +9,8 @@ const teacherSchema = new mongoose.Schema({
   age: Number,
   employeeNumber: String,
   depEdEmail: String,
+  gender: String,
+  gradeLevel: String,
 });
 teacherSchema.plugin(uniqueValidator);
 const Teacher = mongoose.model("Teacher", teacherSchema);
