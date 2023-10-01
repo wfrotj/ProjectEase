@@ -11,6 +11,11 @@ const teacherSchema = new mongoose.Schema({
   depEdEmail: String,
   gender: String,
   gradeLevel: String,
+  education: {
+    highestDegree: String,
+    school: String,
+    major: String,
+  },
 });
 teacherSchema.plugin(uniqueValidator);
 const Teacher = mongoose.model("Teacher", teacherSchema);
